@@ -2,11 +2,12 @@ import React , {useEffect , useState} from 'react';
 import { Link } from "react-router-dom";
 import {styles} from "../styles";
 import { navLinks } from '../constants';
-import { logo , menu , close } from '../assets';
+import { logo , close, menu } from "../assets";
 
 const Navbar = () => {
   const [active , setActive] = useState('');
   const [toggle , setToggle] = useState(false); 
+  //console.log(toggle);
   return (
     <nav className={
       `${styles.paddingX} w-full flex items-center 
@@ -41,19 +42,24 @@ const Navbar = () => {
 
         </ul>
 
-        <div className="sm:hidden flex 
-          flex-1 justify-end items-center">
-          <img 
-            src={menu}
-            alt="menu" 
-            className="w-[28px] h-[28px] object-contain cursor-pointer" 
-            onClick={() => setToggle(!toggle)}/>
-        </div>
+        <div className='sm:hidden flex flex-1 justify-end items-center'>
+          <img
+            src={toggle ? close:menu}
+            alt="menu"
+            className="w-[28px] h-[28px] object-contain"
+            onClick={() => {
+              setToggle(!toggle);
+              
+            }}
+          />
+          
+          </div>
 
       </div>
 
     </nav>
   )
+ 
 }
 
 export default Navbar

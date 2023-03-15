@@ -19,10 +19,10 @@ import {
   postman,
   tfjs,
   turing,
-  carrent,
-  jobit,
   tripguide,
   threejs,
+  arbol_ai,
+  tfjspic
 } from "../assets";
 
 export const navLinks = [
@@ -197,30 +197,30 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Arbol-AI🌱",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This is a web application🌐 which could help easily diagnose diseases in plants🌱 using Machine Learning all on the web, powered by TensorFlow JS.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "TFJS",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Python",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: arbol_ai,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "COVID-19 Tracker",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "In this project, I used public COVID API for taking the number of deaths, the number of infected, and the number of recovered people in the world. In this, I am representing the data through Reactjs.Charts for visualization.",
     tags: [
       {
         name: "react",
@@ -235,20 +235,20 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: tripguide,
+    source_code_link: "https://github.com/carrycooldude/COVID-19_Tracker",
   },
   {
-    name: "Trip Guide",
+    name: "tfjs-linear-regression",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "The Project is a visual representation of Linear Regression Model , built with Tensorflow.js",
     tags: [
       {
-        name: "nextjs",
+        name: "p5.js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "tf.js",
         color: "green-text-gradient",
       },
       {
@@ -256,8 +256,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: tfjspic,
+    source_code_link: "https://github.com/carrycooldude/tfjs-linear-regression",
   },
 ];
 

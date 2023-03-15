@@ -26,8 +26,8 @@ import tfjs from "./company/tfjs.png";
 import postman from "./company/postman.png";
 import turing from "./company/turing.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import arbol_ai from "./arbol_ai.png";
+import tfjspic from "./tfjs-linear-regression.png";
 import tripguide from "./tripguide.png";
 
 export {
@@ -56,7 +56,7 @@ export {
   tfjs,
   postman,
   turing,
-  carrent,
-  jobit,
+  arbol_ai,
+  tfjspic,
   tripguide,
 };

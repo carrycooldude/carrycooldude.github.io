@@ -171,27 +171,27 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I've had the pleasure of working with Kartikey only for a short period. I loved working with him, he has such positive energy and his on/off-work hours is driven by so much passion towards uplifting the student developer communities. Kartikey is a natural leader encompassing empathy towards others, and innovative thinking when it comes to ideas around his OpInCo Community. Kartikey is an asset to any company that works with him and I hope our paths cross again!",
+    name: "Swathi Subbaraj ",
+    designation: "Project Program Coordinator",
+    company: "Google",
+    image: "https://media.licdn.com/dms/image/C4D03AQGOaH_GfQ--QA/profile-displayphoto-shrink_800_800/0/1623085651736?e=1684368000&v=beta&t=ZKinLP8f7xqLYAK_fGIqiwom6oZnqZYn69h0OZ0oVNc",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "I've never met a community builder who truly cares about community success like Kartikey does.",
+    name: "Abhishek Agrawal",
+    designation: "Technical Solution Engineer",
+    company: "Google",
+    image: "https://media.licdn.com/dms/image/C4E03AQEf0uSaZPp0Lg/profile-displayphoto-shrink_400_400/0/1629462035915?e=1684368000&v=beta&t=O0hf7wS0IJb_-Xo2EcxfL0JADcHrJH_y-lUhvOEDI50",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "As a leader he always empower others in the community. Under his guidance I gained a variety of skills that help me in every aspect. Though he was a senior he always made me feel welcome and ask my opinions and matters in various events.",
+    name: "Dheeraj Ghosh",
+    designation: "Co-Organizer",
+    company: "Hack The League",
+    image: "https://media.licdn.com/dms/image/D4D03AQFPP5zOEN-J2w/profile-displayphoto-shrink_100_100/0/1673415983591?e=1684368000&v=beta&t=DZ-23ESj0nC6bLdnZXUqsKudi0QRQN5NPR3LaiIVxdI",
   },
 ];
 

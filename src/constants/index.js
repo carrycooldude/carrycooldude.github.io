@@ -215,7 +215,7 @@ const projects = [
       },
     ],
     image: arbol_ai,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/carrycooldude/Arbol-AI",
   },
   {
     name: "COVID-19 Tracker",

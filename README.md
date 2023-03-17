@@ -3,10 +3,19 @@ This is my PortFolio Website
 
 ## 📦 Installation
 
-You can simply install the project buy running this:
+You can simply use Vite for installation.
 
 ```
-npm install --legacy-peer-deps
+npm create vite@latest -- --template react
+```
+
+Installation for tailwindcss
+
+```
+ npm install -D tailwindcss
+```
+```
+ npx tailwindcss init
 ```
 
 

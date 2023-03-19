@@ -1,6 +1,6 @@
 # Carry-PortFolio
 This is my PortFolio Website
-![logo](https://user-images.githubusercontent.com/41143496/226119075-bbe0b01c-ff16-407d-98e7-cb204ea39694.svg)
+
 
 ## 📦 Installation
 
@@ -9,6 +9,13 @@ You can simply install the project buy running this:
 ```
 npm install --legacy-peer-deps
 ```
+### Tech Stack Used in this PortFolio
+
+- [react-three-fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React](https://reactjs.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
 
 ### 🏃 Run your code

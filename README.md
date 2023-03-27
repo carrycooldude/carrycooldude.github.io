@@ -24,6 +24,10 @@ You can run yourserver on the `localhost:5173` using:
 ```
  npm run dev
 ```
+You can build this repo using:
+```
+ npm run build
+```
 <h2>Connect With Me 🫂</h2>
 <ul>
     <li>Star 🌟 the <a href="https://github.com/carrycooldude/Carry-PortFolio/stargazers">Main Repo</a> 🖥️</li>

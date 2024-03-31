@@ -242,9 +242,9 @@ const projects = [
     source_code_link: "https://github.com/carrycooldude/Resume-Matching",
   },
   {
-    name: "Fine-Tuning Gemma-2b",
+    name: "Gemma Fine-Tune using LoRA",
     description:
-      "Fine-tuned the Gemma-2b model on the Medical Data to improve the model's performance using PeFT.",
+      "Fine-tuned the Gemma-2b model using LoRA.",
     tags: [
       {
         name: "Kaggle",
@@ -260,7 +260,7 @@ const projects = [
       },
     ],
     image: fine,
-    source_code_link: "https://www.kaggle.com/code/kari554/fine-tune-pubmed/notebook",
+    source_code_link: "https://www.github.com/carrycooldude/Gemma-FineTune-LoRA",
   },
 
   {

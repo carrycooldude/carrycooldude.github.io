@@ -22,7 +22,10 @@ import {
   tripguide,
   threejs,
   arbol_ai,
-  tfjspic
+  tfjspic,
+  resume,
+  fine,
+  mediapipe,
 } from "../assets";
 
 export const navLinks = [
@@ -197,16 +200,80 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Arbol-AI🌱",
+    name: "Gemini-Text-MediaPipe",
     description:
-      "This is a web application🌐 which could help easily diagnose diseases in plants🌱 using Machine Learning all on the web, powered by TensorFlow JS.",
+      "This web sample demonstrates how to use the LLM Inference API to run common text-to-text generation tasks like information retrieval, email drafting, and document summarization, on web using WebGPU and MediaPipe.",
     tags: [
       {
-        name: "react",
+        name: "TensorFlow",
         color: "blue-text-gradient",
       },
       {
-        name: "TFJS",
+        name: "GenAI Studio",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: mediapipe,
+    source_code_link: "https://github.com/carrycooldude/GeminiText-MediaPipe",
+  },
+  {
+    name: "Resume-Matching",
+    description:
+      "Built a PDF extractor to pull relevant details from CVs in PDF format, and match them against the job descriptions from the Hugging Face dataset.",
+    tags: [
+      {
+        name: "TensorFlow",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "HuggingFace",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: resume,
+    source_code_link: "https://github.com/carrycooldude/Resume-Matching",
+  },
+  {
+    name: "Fine-Tuning Gemma-2b",
+    description:
+      "Fine-tuned the Gemma-2b model on the Medical Data to improve the model's performance using PeFT.",
+    tags: [
+      {
+        name: "Kaggle",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Gemma-2b",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fine,
+    source_code_link: "https://www.kaggle.com/code/kari554/fine-tune-pubmed/notebook",
+  },
+
+  {
+    name: "Arbol-AI🌱",
+    description:
+      "This is a web application🌐 which could help easily diagnose diseases in plants 🌱 using Machine Learning all on the web, powered by TensorFlow JS.",
+    tags: [
+      {
+        name: "GCP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TensorFlow JS",
         color: "green-text-gradient",
       },
       {
@@ -217,6 +284,7 @@ const projects = [
     image: arbol_ai,
     source_code_link: "https://github.com/carrycooldude/Arbol-AI",
   },
+
   {
     name: "COVID-19 Tracker",
     description:

@@ -29,6 +29,9 @@ import turing from "./company/turing.png";
 import arbol_ai from "./arbol_ai.png";
 import tfjspic from "./tfjs-linear-regression.png";
 import tripguide from "./tripguide.png";
+import resume from "./resume.png";
+import fine from "./fine-tune.png";
+import mediapipe from "./mediapipe.png";
 
 export {
   logo,
@@ -59,4 +62,7 @@ export {
   arbol_ai,
   tfjspic,
   tripguide,
+  resume,
+  fine,
+  mediapipe,
 };

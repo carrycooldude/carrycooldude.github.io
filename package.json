@@ -15,7 +15,7 @@
     "framer-motion": "^10.1.0",
     "maath": "^0.5.2",
     "netlify": "^13.1.4",
-    "netlify-cli": "^15.9.0",
+    "netlify-cli": "^17.22.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.2",
@@ -28,7 +28,7 @@
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.37",
+    "postcss": "^8.4.38",
     "tailwindcss": "^3.2.7",
     "vite": "^4.5.3"
   }

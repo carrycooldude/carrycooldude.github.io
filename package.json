@@ -15,7 +15,7 @@
     "framer-motion": "^10.1.0",
     "maath": "^0.5.2",
     "netlify": "^13.1.4",
-    "netlify-cli": "^17.22.1",
+    "netlify-cli": "^17.33.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.2",

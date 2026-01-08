@@ -15,10 +15,10 @@
     "framer-motion": "^10.1.0",
     "maath": "^0.5.2",
     "netlify": "^13.1.4",
-    "netlify-cli": "^23.5.1",
+    "netlify-cli": "^23.13.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.2",
+    "react-router-dom": "^6.30.3",
     "react-tilt": "^0.1.4",
     "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.150.1"

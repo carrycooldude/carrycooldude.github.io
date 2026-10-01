@@ -14,6 +14,7 @@ import BlogCMSModal from './BlogCMSModal';
 import BlogReaderModal from './BlogReaderModal';
 import KernelMarginalia from './KernelMarginalia';
 import SectionDirectory from './SectionDirectory';
+import BrandLogo from './BrandLogo';
 
 export {
   Navbar,
@@ -30,5 +31,6 @@ export {
   Footer,
   BlogCMSModal,
   BlogReaderModal,
-  KernelMarginalia
+  KernelMarginalia,
+  BrandLogo
 };

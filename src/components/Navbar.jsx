@@ -3,6 +3,7 @@ import { Sun, Moon, ArrowUpRight, Lock, Unlock } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 import { useTheme } from '../context/ThemeContext';
 import { useAuth } from '../context/AuthContext';
+import BrandLogo from './BrandLogo';
 
 export default function Navbar({ onNavigate, currentView = 'all' }) {
   const { theme, toggleTheme } = useTheme();
@@ -46,14 +47,15 @@ export default function Navbar({ onNavigate, currentView = 'all' }) {
     <header className="sticky top-0 z-40 bg-white/95 dark:bg-[#0c0e14]/95 backdrop-blur-md border-b-2 border-gray-900 dark:border-gray-700 transition-colors py-3 select-none">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 flex flex-wrap items-center justify-between gap-2">
         
-        {/* Brand in Felt-Tip Marker Kalam Style */}
+        {/* Brand in Felt-Tip Marker Kalam Style with Hexagon NPU Logo */}
         <div className="flex items-center gap-2">
           <a
             href="/"
             onClick={handleBrandClick}
-            className="font-hand text-xl font-bold text-gray-900 dark:text-white tracking-tight hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-1.5"
+            className="font-hand text-xl font-bold text-gray-900 dark:text-white tracking-tight hover:text-blue-600 dark:hover:text-blue-400 transition-colors flex items-center gap-2"
             title="Kartikey Rawat (Click 4x for CMS login, or click to return home)"
           >
+            <BrandLogo size="sm" />
             <span>KR</span>
             <span className="text-xs text-red-600 dark:text-red-400 font-normal">~devrel</span>
           </a>

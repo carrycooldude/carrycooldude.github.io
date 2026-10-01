@@ -1,19 +1,28 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
+import BrandLogo from './BrandLogo';
 
 export default function Hero() {
   return (
     <section className="pt-14 pb-10 border-b border-gray-100 dark:border-gray-800/80">
       <div className="max-w-2xl mx-auto px-4 sm:px-6">
         
-        {/* Name and Role in Felt-Tip Marker Typography */}
+        {/* Name, Role & Silicon Die Brand Logo in Felt-Tip Marker Typography */}
         <div className="space-y-1.5 mb-6">
-          <div className="flex items-center justify-between">
-            <h1 className="text-3xl sm:text-4xl font-bold font-hand text-gray-900 dark:text-white tracking-tight">
-              {personalInfo.name}
-            </h1>
-            <span className="font-hand text-xs text-red-600 dark:text-red-400">
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center gap-3">
+              <BrandLogo size="lg" />
+              <div>
+                <h1 className="text-3xl sm:text-4xl font-bold font-hand text-gray-900 dark:text-white tracking-tight leading-none">
+                  {personalInfo.name}
+                </h1>
+                <span className="font-hand text-xs text-gray-500 dark:text-gray-400">
+                  @carrycooldude
+                </span>
+              </div>
+            </div>
+            <span className="font-hand text-xs text-red-600 dark:text-red-400 shrink-0">
               devrel &bull; qualcomm
             </span>
           </div>

@@ -13,11 +13,13 @@ import PackagesSection from './PackagesSection';
 import BlogCMSModal from './BlogCMSModal';
 import BlogReaderModal from './BlogReaderModal';
 import KernelMarginalia from './KernelMarginalia';
+import SectionDirectory from './SectionDirectory';
 
 export {
   Navbar,
   Hero,
   HandwrittenSketch,
+  SectionDirectory,
   PackagesSection,
   BlogsSection,
   ProjectsSection,

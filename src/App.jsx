@@ -5,36 +5,41 @@ import {
   Navbar,
   Hero,
   HandwrittenSketch,
-  BlogsSection,
-  PackagesSection,
-  ProjectsSection,
-  TalksSection,
-  PodcastsSection,
-  ExperienceSection,
-  ContactSection,
+  SectionDirectory,
   Footer,
   KernelMarginalia
 } from "./components";
 import SubWebsiteView from "./components/SubWebsiteView";
 import AuthModal from "./components/AuthModal";
 
+const VALID_VIEWS = [
+  "writing", 
+  "packages", 
+  "projects", 
+  "talks", 
+  "podcasts", 
+  "experience", 
+  "contact", 
+  "studio"
+];
+
 function getActiveView() {
-  if (typeof window === "undefined") return "all";
+  if (typeof window === "undefined") return "home";
   
   // Check ?view= parameter
   const searchParams = new URLSearchParams(window.location.search);
   const viewParam = searchParams.get("view");
-  if (viewParam && ["writing", "packages", "projects", "talks", "podcasts", "studio"].includes(viewParam.toLowerCase())) {
+  if (viewParam && VALID_VIEWS.includes(viewParam.toLowerCase())) {
     return viewParam.toLowerCase();
   }
 
   // Check #hash parameter
   const hash = window.location.hash.replace(/^#\/?/, "").toLowerCase();
-  if (["writing", "packages", "projects", "talks", "podcasts", "studio"].includes(hash)) {
+  if (VALID_VIEWS.includes(hash)) {
     return hash;
   }
 
-  return "all";
+  return "home";
 }
 
 const PortfolioContent = () => {
@@ -54,38 +59,46 @@ const PortfolioContent = () => {
     };
   }, []);
 
-  const navigateHome = () => {
-    window.history.pushState({}, "", window.location.pathname);
-    setCurrentView("all");
+  const navigateToView = (viewId) => {
+    if (viewId === "home" || viewId === "all") {
+      window.history.pushState({}, "", window.location.pathname);
+      setCurrentView("home");
+    } else {
+      window.history.pushState({}, "", `?view=${viewId}`);
+      setCurrentView(viewId);
+    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  // If a specific sub-website is requested (via ?view=writing, ?view=packages, etc.), render that isolated view!
-  if (currentView !== "all") {
+  const navigateHome = () => {
+    navigateToView("home");
+  };
+
+  // If a specific section sub-page is active, render that dedicated, clean view!
+  if (currentView !== "home") {
     return (
-      <>
-        <SubWebsiteView view={currentView} onNavigateHome={navigateHome} />
+      <div className="min-h-screen bg-white text-[#18181b] dark:bg-[#0c0e14] dark:text-[#f1f5f9] font-hand selection:bg-red-100 selection:text-red-900 dark:selection:bg-blue-900 dark:selection:text-white transition-colors duration-200 relative">
+        <SubWebsiteView 
+          view={currentView} 
+          onNavigateHome={navigateHome} 
+          onSelectView={navigateToView}
+        />
         <AuthModal />
-      </>
+      </div>
     );
   }
 
-  // Otherwise render full master portfolio
+  // Otherwise render the sleek, fast Executive Whiteboard Hub / Directory
   return (
     <div className="min-h-screen bg-white text-[#18181b] dark:bg-[#0c0e14] dark:text-[#f1f5f9] font-hand selection:bg-red-100 selection:text-red-900 dark:selection:bg-blue-900 dark:selection:text-white transition-colors duration-200 relative">
-      <Navbar />
+      <Navbar onNavigate={navigateToView} currentView={currentView} />
       <KernelMarginalia />
       <main>
         <Hero />
-        <div className="max-w-2xl mx-auto px-4 sm:px-6">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
           <HandwrittenSketch />
         </div>
-        <BlogsSection />
-        <PackagesSection />
-        <ProjectsSection />
-        <TalksSection />
-        <PodcastsSection />
-        <ExperienceSection />
-        <ContactSection />
+        <SectionDirectory onSelectView={navigateToView} />
       </main>
       <Footer />
       <AuthModal />
